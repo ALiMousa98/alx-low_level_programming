@@ -1,12 +1,11 @@
 #include <stdio.h>
-
 #define RET 0
 
-        /**
-         * program to print a string using put function
-         * 
-	 * Return 0 when success
-	 * */
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
