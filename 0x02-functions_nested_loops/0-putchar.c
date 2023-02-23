@@ -1,10 +1,12 @@
 #include "main.h"
 
-/*
- * main - print _outchar
- *
- * Return 0
- * */
+/**
+ * main - Entry Block
+ *Description: prints _putchar followed by a new line
+ * Return: 0
+ */
+
+
 int main(void)
 {
 	_putchar('_');
