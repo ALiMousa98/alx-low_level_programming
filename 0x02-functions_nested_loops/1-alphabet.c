@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * main - Entry Block
- *Description: prints _putchar followed by a new line
- * Return: 0
+ * print_alphabet - entry point
+ * Description - prints all alphabet, in lowercase, followed by a new line
+ * Return
  */
-
 
 void print_alphabet(void)
 {
