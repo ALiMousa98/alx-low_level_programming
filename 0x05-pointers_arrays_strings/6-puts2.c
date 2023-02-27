@@ -3,12 +3,12 @@
 
 
 /**
- *  _puts2 - length of the strin
+ *  puts2 - length of the strin
  *  @str: pointer to string
  * Return: void
 */
 
-void _puts2(char *str)
+void puts2(char *str)
 {
 
 	int c = 0;
