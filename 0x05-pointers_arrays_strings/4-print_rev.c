@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-
+#include <string.h>
 
 /**
  *  print_rev - length of the strin
@@ -13,7 +13,7 @@ void print_rev(char *s)
 
 	int c = _strlen(s);
 
-	while (c < 0)
+	while (c >= 0)
 		_putchar(s[c--]);
 	_putchar('\n');
 }
