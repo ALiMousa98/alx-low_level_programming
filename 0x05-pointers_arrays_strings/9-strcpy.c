@@ -1,23 +1,22 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
 
 /**
- * _strcpy - print `n` elements of an array of integers
- * @dest: int type array pointer
- * @src: int type integer
- * Return: dest
+ * *_strcpy -  copies the string pointed to by src
+ * @dest: char type string
+ * @src: char type string
+ * Description: Copy the string pointed to by pointer `src` to
+ * the buffer pointed to by `dest`
+ * Return: Pointer to `dest`
  */
 
 char *_strcpy(char *dest, char *src)
 {
-	int i = 0;
-	do
-	{
-		dest[i] = src[i];
-		i++;
+	int index = -1;
 
-	}while (src[i] != '\0');
+	do {
+		index++;
+		dest[index] = src[index];
+	} while (src[index] != '\0');
+
 	return (dest);
-
 }
