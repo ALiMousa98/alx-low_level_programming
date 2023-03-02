@@ -20,10 +20,9 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[index] = src[index];
 		c++;
 	} while (src[index] != '\0' && c < n);
-	
 	while (c < n)
 	{
-		dest[++index]='\0';
+		dest[++index] = '\0';
 		c++;
 	}
 
