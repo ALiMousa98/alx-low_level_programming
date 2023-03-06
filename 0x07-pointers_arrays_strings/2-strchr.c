@@ -20,6 +20,6 @@ char *_strchr(char *s, char c)
 			break;
 	}
 	if (i > 0)
-		return ('\0');
+		return (NULL);
 	return (s + i);
 }
