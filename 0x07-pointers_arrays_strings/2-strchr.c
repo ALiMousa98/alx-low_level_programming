@@ -1,24 +1,29 @@
 #include "main.h"
-#include <stddef.h>
 
 /**
- * _strchr - copies n bytes from memory area src to memory area dest
- *
- * @s: array to be searched
- * @c: the character to search for
- * Return: pointer the array after get the first occurance
- */
-
+  * _strchr - locate character in string
+  * @s: source string
+  * @c: character to find
+  *
+  * Return: the string from character found
+  */
 char *_strchr(char *s, char c)
 {
-	int i = 0;
+	int a = 0, b;
 
-	while (s[i] != '\0')
+	while (s[a])
 	{
-		if (s[i] != c)
-			i++;
-		else
-			return (s + i);
+		a++;
 	}
+
+	for (b = 0; b <= a; b++)
+	{
+		if (c == s[b])
+		{
+			s += b;
+			return (s);
+		}
+	}
+
 	return ('\0');
 }
