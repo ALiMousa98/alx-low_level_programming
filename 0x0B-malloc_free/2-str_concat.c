@@ -16,6 +16,10 @@ char *str_concat(char *s1, char *s2)
 
 	if (dest == NULL)
 		return (NULL);
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	strcat(dest, s1);
 	strcat(dest, s2);
 	if (dest == NULL)
