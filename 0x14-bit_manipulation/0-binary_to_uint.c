@@ -8,20 +8,19 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int sum = 0;
-	
+unsigned int sum = 0;
 
-	if (!b)
-		return (0);
-	for (; *b != '\0'; b++)
+if (b == NULL)
+	return (0);
+for (; *b != '\0'; b++)
+{
+	if (*b == '0' || *b == '1')
 	{
-		if (*b == '0' || *b =='1')
-		{
-			sum <<= 1;
-			sum += *b - '0';
-		}
-		else
-			return (0);
+		sum <<= 1;
+		sum += *b - '0';
 	}
-	return (sum);
+	else
+		return (0);
+}
+return (sum);
 }
